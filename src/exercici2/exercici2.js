@@ -1,6 +1,15 @@
-const imgLogo = 'car.svg';
+const imgLogo = 'img/car.svg';
 
-const div = document.getElementById('imageDiv');
+const divImg = document.getElementById('imageDiv');
 const img = document.createElement('img');
 
-div.appendChild(img).src = imgLogo;
+divImg.appendChild(img).src = imgLogo;
+
+// const div = document.querySelector('div');
+
+// const imatge = document.createElement('img');
+
+// imatge.src = imgLogo;
+// imatge.alt = 'logo eduard';
+
+// div.appendChild(imatge);

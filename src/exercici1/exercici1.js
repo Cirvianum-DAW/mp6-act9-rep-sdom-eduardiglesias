@@ -9,3 +9,17 @@ fruitList.forEach((fruita) => {
     fruitListElement.appendChild(fruitaElement);
 })
 
+// const ulElement = document.querySelector('ul');
+
+// fruitList.forEach((fruit) => {
+//     const liElement = document.createElement('li');
+
+//     liElement.textContent = fruit;
+
+//     ulElement.appendChild(liElement);
+
+// })
+
+
+
+
