@@ -1,15 +1,18 @@
-// Obtenir tots els elements de la llista no ordenada
-let llistes = document.querySelectorAll('ul');
+// const llistes = document.querySelectorAll('ul');
 
-// Funció recursiva per canviar el text del primer i últim element de la llista
-function canviarText(llistes, index) {
-    if (index < llistes.length) {
-        let elements = llistes[index].querySelectorAll('li');
-        elements[0].textContent = 'primer';
-        elements[elements.length - 1].textContent = 'últim';
-        canviarText(llistes, index + 1);
-    }
-}
+// function canviarText(llistes, index) {
+//     if (index < llistes.length) {
+//         const elements = llistes[index].querySelectorAll('li');
+//         elements[0].textContent = 'primer';
+//         elements[elements.length - 1].textContent = 'últim';
+//         canviarText(llistes, index + 1);
+//     }
+// }
 
-// Iniciar la funció recursiva
-canviarText(llistes, 0);
+// canviarText(llistes, 0);
+
+const firstElementList = document.querySelectorAll('li:first-child');
+const lastElementList = document.querySelectorAll('li:last-child');
+
+firstElementList.forEach((li) => (li.textContent = 'primer'));
+lastElementList.forEach((li) => (li.textContent = 'últim'));
